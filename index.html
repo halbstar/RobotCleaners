@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Robot Cleaners</title>
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+  	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/helper.js"></script>
+	<script type="text/javascript" src="js/class.js"></script>
+	<!--script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family= Roboto|Play' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	
+	
+
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="menu">
+		<div>
+			<p>
+				<h1>jQuery Robot Cleaners</h1>
+			</p>
+		</div>
+		<hr>
+		<div class="form">
+				<h2>
+					Set number of tiles
+				</h2>
+			<!-- <hr> -->
+			<form onsubmit="return false;">
+				<span class="widthHeight">Width</span>
+				<input id="inputWidth"  type="text"   value="5"></input><br>
+				<span class="widthHeight">Height</span>
+				<input id="inputHeight" type="text"   value="5"></input>
+				<button class="makeRoom">Make new room</button>
+			</form>
+		</div>
+		
+		<div class="cleaners">
+				<h2>Choose cleaners (Drag & Drop to Room)</h2>
+			<!-- <hr> -->
+			<div class="Robots">
+				<div class="RobotChooseWrapper">
+					<div class="CrazyRobot"  draggable="true">Crazy Robot</div>
+				</div>
+
+				<div class="RobotChooseWrapper">
+					<div class="DrunkRobot"  draggable="true">Drunk Robot</div>
+				</div>
+				<div class="RobotChooseWrapper">
+					<div class="MagicRobot"  draggable="true">Magic Robot</div>
+				</div>
+				<div class="RobotChooseWrapper">
+					<div class="URobot"  draggable="true">U Robot</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="right"></div> -->
+	</div>
+
+	<div style="clear:both;"></div>
+	<!-- <div class="roomContainer"> -->
+		<div class='room' id='droppable'>
+			<div class="description">
+				<div>
+					<h3>Welcome to</h3>
+					<h2>Robot cleaners</h2>
+					<ul><strong>How to play:</strong>
+						<li>Set number of tiles in width and height of a room (it is possible, just click on the number) and press button "Make new room". <br>By default width and height is calculated from your browsers dimensions.</li>
+						<li>Drag and drop Robots into the room.</li>
+						<li>
+							<div class="RobotChooseWrapper">
+								<div class="CrazyRobot"  draggable="true">Crazy Robot</div>
+							</div> <span>Computer driven</span> <br>Each step is mystery...
+						</li>
+						<li>
+							<div class="RobotChooseWrapper">
+								<div class="DrunkRobot"  draggable="true">Drunk Robot</div>
+							</div> <span>Computer driven</span> <br>This robot is totally drunk. He walks in "straight" line.
+						</li>
+						<li>
+							<div class="RobotChooseWrapper">
+								<div class="MagicRobot"  draggable="true">Magic Robot</div>
+							</div> <span>Computer driven</span> <br>Force of magic propels it.
+						</li>
+						<li>
+							<div class="RobotChooseWrapper">
+								<div class="URobot"  draggable="true">U Robot</div>
+							</div> <span>User driven</span><br>U clean your room!
+						</li>
+					</ul>
+					<br>
+					<br>
+					<li>
+						<strong>One who cleans most of the tiles is a winner!</strong>
+					</li>
+				</div>
+			
+			</div>
+			<div class="gameOver">
+				<h2>GAME OVER</h2>
+				<h3>Final score</h3>
+				<div class="score" style="width:200px;"></div>
+			</div>
+		</div>
+	<!-- </div> -->
+
+	<div class="scoreWrapper"><strong>Score:</strong>
+		<div class='score'></div>
+	</div>
+	
+
+</div>
+
+</body>
+</html>

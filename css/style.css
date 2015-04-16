@@ -1,0 +1,261 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html, body{
+			height: 100%;
+			font-family: 'Play', sans-serif;
+		}
+	
+		hr{
+			margin: 10px 5px; 
+		}
+		h2, h3{
+			text-align: center;
+		}
+		input{
+			margin-left: 5px;
+			width:25px;
+			background-color: black;
+			color: white;
+			border: 0px;
+		}
+
+
+		.wrapper{
+			min-height: 100%;
+			background-color: gray;
+		}
+
+
+		/*ROOM*/
+		.room{
+			position:relative;
+			z-index: 20;
+			margin: auto;
+		}
+		
+		.tile{
+			width:78px;
+			min-height:78px;
+			margin: 1px;
+			float:left;
+			background-color: red;
+			box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, 0.75);
+			border-radius: 20px;
+			z-index: 30;
+		}
+		/*ROOM*/
+
+
+		/*ROBOTS*/
+		.Robot, .CrazyRobot, .DrunkRobot, .MagicRobot, .URobot{
+			position: absolute;
+			width:50px;
+			height: 50px;
+			border-radius: 50px;
+			color: white;
+			cursor: pointer;
+			text-align: center;
+			
+			z-index: 50;
+			border: 2px solid white;
+			background-color: blue;
+			box-shadow: 1px 0px 0px 1px rgba(50, 50, 50, 0.75);
+			/*font-family: 'Roboto', sans-serif;*/
+			
+		}
+
+		.CrazyRobot{
+			border: 4px solid yellow;
+			background-color: cyan;
+			z-index: 50;
+			margin:auto;
+		}
+
+		.DrunkRobot{
+			border: 4px solid green;
+			background-color: orange;
+			z-index: 50;
+			margin:auto;
+		}
+		.MagicRobot{
+			border: 4px solid orange;
+			background-color: purple;
+			z-index: 50;
+			margin:auto;
+		}
+		.URobot{
+			border: 4px solid olive;
+			background-color: black;
+			z-index: 50;
+			/*margin:auto;*/
+		}
+		/*ROBOTS*/
+
+	
+		/*MENU*/
+		.menu{
+			width:100%;
+			height: auto;
+			min-height: 160px;
+			background-color: black;
+			text-align: center;
+			color: white;
+			
+		}
+		.menu h2{
+			white-space: nowrap;
+		}
+		.form{
+			position: relative;
+			margin: auto;
+			width: 29%;
+			padding: 5px;
+			padding-left: 20px;
+			text-align: left;
+			float:left;
+		}
+		.cleaners{
+			margin: auto;
+			width: 39%;
+			float: left;
+			padding: 5px;
+
+			margin: auto;
+		}
+
+		.RobotChooseWrapper{
+			position: relative;
+			float: left;
+			/*margin-left:10%;*/
+			
+			height: 50px;
+			width: 24%;
+		}
+		.RobotChooseWrapper div{
+			margin:auto;
+		}
+
+
+
+		.widthHeight{
+			float: left;
+			width: 60px;
+			
+		}
+		/*MENU*/
+
+
+		/*SCORE*/
+		.scoreWrapper{
+			font-family: 'Play', sans-serif;
+			position: absolute;
+			right:0;
+			top:160px;
+			float:right;
+			color: white;
+			background-color: black;
+			width: 10%;
+			height: auto;
+			z-index: 200;
+			opacity: 0.5;
+		}
+		.score{
+			margin: auto;
+		}
+		/*SCORE*/
+
+
+
+		/*DESCRIPTION AND GAME OVER*/
+		.description, .gameOver{
+			margin: auto;
+			background-color: black;
+			padding: 20px;
+			color: white;
+			width:400px;
+			height: auto;
+			opacity: 0.5;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			box-shadow: 5px 5px 3px 5px rgba(50, 50, 50, 0.75);
+		}
+
+		.description ul {
+ 		   	list-style-type: none;
+    		padding: 10px;
+    		margin: 0px;
+		}
+
+		li{
+			list-style-type: none;
+			padding: 20px;
+		}
+		li span{
+			color:green;
+			border: 1px solid red;
+		}
+
+		.description h2, h3, strong{
+			text-align: center;
+		}
+
+		.gameOver{
+			width:inherit;
+			height: inherit;
+			position:absolute;
+			top:0;
+			left: -20px;
+			z-index: 500;
+			display: none;
+			opacity: 0.7;
+		}
+		/*DESCRIPTION AND GAME OVER*/
+
+
+/* This button was generated using CSSButtonGenerator.com */
+button{
+	-moz-box-shadow:inset 0px 1px 4px -1px #bee2f9;
+	-webkit-box-shadow:inset 0px 1px 4px -1px #bee2f9;
+	box-shadow:inset 0px 1px 4px -1px #bee2f9;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #302a30), color-stop(1, #0a2533) );
+	background:-moz-linear-gradient( center top, #302a30 5%, #0a2533 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#302a30', endColorstr='#0a2533');
+	background-color:#302a30;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0px;
+	border:2px solid #171c24;
+	display:inline-block;
+	color:#ffffff;
+	
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+	height:25px;
+	line-height:18px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:5px 2px 18px #788b9e;
+}
+button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0a2533), color-stop(1, #302a30) );
+	background:-moz-linear-gradient( center top, #0a2533 5%, #302a30 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a2533', endColorstr='#302a30');
+	background-color:#0a2533;
+}button:active {
+	position:relative;
+	top:1px;
+}
